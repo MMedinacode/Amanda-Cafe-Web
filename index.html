@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- DEMO de venta, no el sitio oficial del local. Lleva nombre, resenas y
+     horario reales, por eso va con noindex. Se quita si el local contrata. -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amanda Café y Banquete · Café de especialidad y pastelería en Maipú</title>
+<meta name="description" content="Amanda Café y Banquete — café de especialidad, dulces recién horneados, sándwiches y tortas en Lago Castelgandolfo 18807, Maipú. 4.6★ en Google.">
+
+<!--
+  ============================================================
+  DEMO — AMANDA CAFÉ Y BANQUETE (Maipú)
+
+  ✅ DATOS REALES VERIFICADOS (10-09-2026)
+  - Google Maps: 4.6★, 9 opiniones, Cafetería.
+  - Dirección: Lago Castelgandolfo 18807, 9280793 Maipú.
+  - Teléfono: 9 4245 1448.
+  - Place ID real: 0x9662dd64bfb563cd:0x12a55ccf3f969e05
+  - Coordenadas: -33.5610343, -70.7895854
+  - 3 reseñas reales con nombre, copiadas de Google Maps.
+  - Fotos: fotos propias del local publicadas en su ficha de Google.
+  - Lema real, de su propio logo: "La cultura del amor".
+  - Los rubros de los pendones de su fachada son reales: "Café de
+    especialidad", "Dulces recién horneados", "Sandwich & Tortas",
+    "Una pausa necesaria".
+
+  ⚠️ PENDIENTE / NUNCA INVENTADO:
+  - HORARIO: Google solo confirma que cierra a las 21:00. La hora de
+    apertura y los días NO están publicados. El indicador usa 09:00–21:00
+    como estimación y así se declara en Visítanos. CONFIRMAR CON EL LOCAL.
+  - PRECIOS: la foto de su vitrina muestra etiquetas con precios, pero
+    varios dígitos no se leen con certeza en la imagen. NO se transcriben:
+    un precio mal leído en el sitio de un negocio es peor que ninguno.
+    Los productos van sin precio y el carrito dice "A consultar".
+    Solo "Muffin fusión $1.800" se leía con claridad. Pedir la carta.
+  - No se encontró Instagram propio del local. Verificar si tienen.
+  - Falta el archivo del logo en buena resolución.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;1,400&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-taza" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="50" height="50">
+      <path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/>
+      <path d="M44 27h5a7 7 0 0 1 0 14h-5" fill="none" stroke="currentColor" stroke-width="4"/>
+    </svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="brand" data-tab="inicio">
+      <span class="brand-ico" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="22" height="22">
+          <path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand-name">Amanda</span>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-solid btn-sm" href="tel:+56942451448">Llamar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= INICIO ================= -->
+<section class="tab-panel active" data-tab-panel="inicio">
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="fotos/fachada.jpg" alt="Fachada de Amanda Café y Banquete en Maipú, con su terraza y sillas verdes">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Café de especialidad · Pastelería · Maipú</p>
+      <h1 class="reveal">Una pausa necesaria</h1>
+      <p class="hero-lead reveal">
+        Café de especialidad, dulces recién horneados, sándwiches y tortas
+        en Lago Castelgandolfo 18807, Maipú.
+      </p>
+
+      <div class="hero-pills reveal">
+        <span class="pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Consultando horario…</span></span>
+        <span class="pill">★ <strong>4.6</strong> · 9 opiniones en Google</span>
+        <span class="pill">☕ Café de especialidad</span>
+      </div>
+
+      <div class="hero-ctas reveal">
+        <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+        <button class="btn btn-ghost" data-tab="visitanos">Cómo llegar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que hacemos</span>
+        <h2 class="section-title">La cultura del amor</h2>
+        <p class="section-sub">Es lo que dice su propio logo, y se nota en cómo atienden: las tres reseñas de Google destacan la atención antes que cualquier otra cosa.</p>
+      </div>
+      <div class="pilares">
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 5c0-1.5 1-1.5 1-3"/></svg></div>
+          <h3>Café de especialidad</h3>
+          <p>"El café exquisito", "pero el café, uff uff uff, ¡una delicia!" — citas textuales de sus reseñas reales.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 12c0-3 4-5 8-5s8 2 8 5"/><path d="M12 7V4"/></svg></div>
+          <h3>Dulces recién horneados</h3>
+          <p>Muffins, donuts rellenas, rollos de canela y pan de chocolate, en vitrina todos los días.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 12 6l8 8z"/><path d="M4 14h16v4H4z"/></svg></div>
+          <h3>Sándwiches y tortas</h3>
+          <p>Tortas frescas por porción o enteras, kuchen, pie y sándwiches para llevar.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section class="tab-panel" data-tab-panel="nosotros">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 class="section-title">Un café de barrio, hecho con calma</h2>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-text reveal">
+          <p class="lead">
+            Amanda Café y Banquete es una cafetería de barrio en Maipú: café de
+            especialidad, vitrina de dulces horneados el mismo día y una terraza chica
+            con mesas afuera para sentarse un rato.
+          </p>
+          <p>
+            Con <strong>4.6 estrellas en Google</strong>, lo que más repiten quienes la visitan
+            es la atención y el café. Su propio logo lo resume: <em>"la cultura del amor"</em>.
+          </p>
+          <div class="badges reveal">
+            <span class="badge">4.6★ · 9 opiniones</span>
+            <span class="badge">Consumo en el lugar</span>
+            <span class="badge">Pedidos en línea</span>
+            <span class="badge">Terraza</span>
+          </div>
+        </div>
+        <div class="nosotros-fotos reveal">
+          <figure class="foto-grande">
+            <img src="fotos/vitrina.jpg" alt="Vitrina de dulces de Amanda: muffins, donuts, rollos de canela y tortas" loading="lazy">
+            <figcaption>La vitrina del día</figcaption>
+          </figure>
+          <figure><img src="fotos/local2.jpg" alt="Interior de Amanda Café y Banquete" loading="lazy"></figure>
+          <figure><img src="fotos/local3.jpg" alt="Rincón de Amanda Café y Banquete" loading="lazy"></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTA ================= -->
+<section class="tab-panel" data-tab-panel="carta">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">La carta</span>
+        <h2 class="section-title">Nuestra carta</h2>
+        <p class="section-sub">
+          Productos reales de su vitrina. Arma tu pedido y consulta los precios
+          del día directamente en el local.
+        </p>
+      </div>
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
+      <div id="menuPanels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="tab-panel" data-tab-panel="resenas">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que dicen</span>
+        <h2 class="section-title">4.6 / 5 · 9 opiniones en Google</h2>
+      </div>
+      <div class="resenas-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"¡Una experiencia completa! Excelente atención, un ambiente acogedor, el café
+             exquisito, las tortas muy frescas y sabrosas. Sin duda un lugar totalmente
+             recomendable, ¡un 10 de 10!"</p>
+          <footer><span class="avatar" aria-hidden="true">BV</span>
+            <span class="review-meta"><strong>Betzabé Vega</strong>hace 3 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"¡Cafetería de calidad! Los pasteles riquísimos... pero el café, uff uff uff,
+             ¡una delicia! Gracias por su excelente atención."</p>
+          <footer><span class="avatar" aria-hidden="true">EV</span>
+            <span class="review-meta"><strong>Enzo Villarroel</strong>Local Guide · hace 3 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Excelente café y pastelitos para endulzar el día y, por supuesto, con la mejor
+             atención. ¡Me encanta! Lo recomiendo 1000%."</p>
+          <footer><span class="avatar" aria-hidden="true">TV</span>
+            <span class="review-meta"><strong>Tatiana Vega</strong>hace 3 meses</span></footer>
+        </article>
+      </div>
+      <p class="review-cta-bajo reveal">
+        <a href="https://search.google.com/local/writereview?placeid=0x9662dd64bfb563cd:0x12a55ccf3f969e05" target="_blank" rel="noopener">
+          ¿Nos visitaste? Déjanos tu reseña en Google
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISÍTANOS ================= -->
+<section class="tab-panel" data-tab-panel="visitanos">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Visítanos</span>
+        <h2 class="section-title">Te esperamos en Maipú</h2>
+      </div>
+      <div class="visitanos-grid">
+        <div class="visitanos-info reveal">
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><strong>Lago Castelgandolfo 18807</strong><span>Maipú, Región Metropolitana</span></div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <strong>Horario</strong>
+              <span>Cierra a las 21:00</span>
+              <span class="nota-fuente">La hora de apertura no está publicada en Google — conviene confirmarla con el local.</span>
+            </div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg></span>
+            <div><strong>+56 9 4245 1448</strong><span>Teléfono publicado en su ficha de Google</span></div>
+          </div>
+          <div class="visitanos-ctas">
+            <a class="btn btn-solid" href="tel:+56942451448">Llamar al local</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Amanda+Caf%C3%A9+y+Banquete+Maipu&destination_place_id=0x9662dd64bfb563cd:0x12a55ccf3f969e05" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.5610343,-70.7895854&navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+        <div class="map-frame reveal">
+          <!-- Embed REAL: place id y coordenadas de su ficha de Google (10-09-2026) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.0!2d-70.7895854!3d-33.5610343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dd64bfb563cd%3A0x12a55ccf3f969e05!2sAmanda%20Caf%C3%A9%20y%20Banquete!5e0!3m2!1ses-419!2scl!4v1789005420000!5m2!1ses-419!2scl"
+            loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            title="Mapa de Amanda Café y Banquete en Maipú"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="brand-name footer-brand">Amanda</span>
+      <p>Lago Castelgandolfo 18807 · Maipú</p>
+      <p class="status-line"><span class="status-dot" id="statusDot2"></span> <span id="statusText2">—</span></p>
+    </div>
+    <div class="footer-links">
+      <a href="tel:+56942451448">Teléfono</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Amanda+Caf%C3%A9+y+Banquete+Maipu" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+  </div>
+</footer>
+
+<div class="float-widget">
+  <a href="tel:+56942451448" class="float-btn float-tel" aria-label="Llamar a Amanda">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg>
+  </a>
+</div>
+
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
