@@ -20,6 +20,10 @@
   --font-display:'Petrona', Georgia, serif;
   --font-body:   'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
+  --acento:     var(--terracota);
+  --sobre-acento:#FFFFFF;
+  --suave:      var(--piedra);
+
   --radio:14px; --radio-g:24px;
   --sombra:0 4px 16px rgba(30,46,51,.08);
   --sombra-alta:0 14px 36px rgba(30,46,51,.16);
@@ -37,7 +41,8 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:400; line-height:1.15; }
   display:flex; align-items:center; justify-content:center;
   transition:opacity .45s ease, visibility .45s ease; }
 #loader.done{ opacity:0; visibility:hidden; }
-.loader-taza{ color:var(--teal); animation:tazaLate 1s ease-in-out infinite; }
+.loader-taza{ animation:tazaLate 1s ease-in-out infinite; }
+.loader-taza img{ width:64px; height:64px; border-radius:50%; display:block; box-shadow:0 0 0 3px var(--teal); }
 @keyframes tazaLate{ 0%,100%{ transform:scale(1); opacity:1; } 50%{ transform:scale(.86); opacity:.6; } }
 
 .site-header{ position:sticky; top:0; z-index:900; background:rgba(250,244,236,.94);
@@ -46,6 +51,7 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:400; line-height:1.15; }
   display:flex; align-items:center; justify-content:space-between; gap:20px; }
 .brand{ display:flex; align-items:center; gap:9px; background:none; border:none; cursor:pointer; padding:0; }
 .brand-ico{ color:var(--teal); display:flex; }
+.brand-ico img{ width:34px; height:34px; border-radius:50%; object-fit:cover; display:block; }
 .brand-name{ font-family:var(--font-display); font-size:1.45rem; color:var(--tinta); }
 .nav-links{ display:flex; gap:4px; }
 .nav-link{ background:none; border:none; cursor:pointer; font-family:var(--font-body);
@@ -223,6 +229,8 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:400; line-height:1.15; }
 
 .site-footer{ background:var(--tinta); color:#E9DED3; padding:52px 0 40px; }
 .footer-inner{ display:flex; flex-wrap:wrap; gap:28px; justify-content:space-between; align-items:flex-start; }
+.footer-brand-row{ display:flex; align-items:center; gap:11px; }
+.footer-logo{ width:34px; height:34px; border-radius:50%; object-fit:cover; }
 .footer-brand{ color:#fff; font-size:1.6rem; }
 .site-footer p{ margin:6px 0 0; font-size:.9rem; opacity:.85; }
 .status-line{ display:flex; align-items:center; gap:8px; }
@@ -235,7 +243,7 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:400; line-height:1.15; }
   justify-content:center; color:#fff; box-shadow:var(--sombra-alta); text-decoration:none; }
 .float-btn svg{ width:24px; height:24px; }
 .float-ig{ background:linear-gradient(45deg,#F09433,#DC2743,#BC1888); }
-.float-tel{ background:var(--teal); }
+.float-wa{ background:#25D366; }
 
 .reveal{ opacity:0; transform:translateY(22px); transition:opacity .65s ease, transform .65s ease; }
 .reveal.in{ opacity:1; transform:none; }
